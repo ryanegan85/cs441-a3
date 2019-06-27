@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="This is activity 1!" />
+        android:text="" />
 
     <Button
         android:id="@+id/button"
@@ -39,7 +39,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="135dp"
         android:layout_marginLeft="135dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="24dp"
         android:text="Celsius: 0"
         android:textSize="32dp" />
 
@@ -51,10 +51,38 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="102dp"
-        android:layout_marginLeft="102dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="89dp"
         android:text="Fahrenheit: 32"
         android:textSize="32dp" />
+
+    <EditText
+        android:id="@+id/editCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="192dp"
+        android:ems="10"
+        android:hint="Enter Celsius (0-100):"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editFahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="262dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Enter Fahrenheit (32-212):" />
 
 </RelativeLayout>
