@@ -20,7 +20,7 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="Go to activity 2" />
+        android:text="Vacation!" />
 
     <SeekBar
         android:id="@+id/seekBar"

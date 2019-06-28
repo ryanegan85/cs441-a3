@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private int fahrenheitValue;
     private int celsiusValue;
     private boolean setChanged = false;
+    private String cAndFString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,6 +139,9 @@ public class MainActivity extends AppCompatActivity {
 
 public void openActivity2() {
         Intent i = new Intent(this, Activity2.class);
+        cAndFString = fahrenheitValue + " F, " + celsiusValue + " C!";
+        i.putExtra("TEMP_STRING", "The current temperature is " + cAndFString);
+        i.putExtra("TEMP_VALUE", Integer.toString(celsiusValue));
         startActivity(i);
     }
 }
